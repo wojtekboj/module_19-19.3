@@ -21,9 +21,10 @@ function removeComment(id) {
     };
 }
 
-function editComment(id) {
+function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
+        text,
         id: id
     };
 }
